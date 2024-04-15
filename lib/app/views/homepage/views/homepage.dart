@@ -66,6 +66,7 @@ class homepage extends StatelessWidget {
                     },
                     icon: Icon(Icons.arrow_forward_ios_rounded)),
                 title: Text(controllerName!),
+                subtitle: Text(controllerPrice!),
               ));
             }),
           ],
