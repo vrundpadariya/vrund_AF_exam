@@ -1,16 +1,7 @@
-# exam_af
+Introducing Prestige Bids your ultimate destination for exciting auctions right at your fingertips. Whether you're a seasoned collector, a passionate enthusiast, or just love the thrill of bidding, our app brings the excitement of auctions directly to your mobile device.
 
-A new Flutter project.
+With Prestige Bids, you can browse through a wide range of categories, from rare antiques to cutting-edge technology, and everything in between. Our intuitive interface makes it easy to search for items, view detailed descriptions and images, and track your favorite auctions with just a few taps.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ there were error that why photo was not uploade
+ 
