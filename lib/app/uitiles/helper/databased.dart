@@ -12,13 +12,13 @@ class DBHelper {
   static Database? database;
 
   //TODO:table componennts
-  String table_name = 'aution';
-  String id = 'id';
-  String name = 'name';
-  String price = 'price';
-  String category = 'category';
+  static String table_name = 'aution';
+  static String id = 'id';
+  static String name = 'name';
+  static String price = 'price';
+  static String category = 'category';
 
-  initDB() async {
+  static initDB() async {
     String path = await getDatabasesPath();
     String db_path = join(path, 'demo.db');
 
@@ -33,7 +33,7 @@ class DBHelper {
     );
   }
 
-  Future<int?> insertQuote({required Auction m_quote}) async {
+  static Future<int?> insertProduct({required Auction m_quote}) async {
     await initDB();
     String query =
         "INSERT INTO $table_name($name,$category,$price) VALUES(?,?);";
@@ -42,7 +42,7 @@ class DBHelper {
     return res;
   }
 
-  Future<List<Auction>?> fetchQuote() async {
+  static  Future<List<Auction>?> fetchQuote() async {
     await initDB();
     String query = "SELECT * FROM $table_name;";
     var list = await database?.rawQuery(query);
@@ -50,7 +50,7 @@ class DBHelper {
     return todo;
   }
 
-  Future<void> deleteStudentData(int dId) async {
+  static Future<void> deleteStudentData(int dId) async {
     database = await initDB();
 
     String sql = 'DELETE FROM Student WHERE $id=?';

@@ -1,3 +1,5 @@
+import 'package:flutter/cupertino.dart';
+
 class Auction {
   String name;
   String category;
@@ -10,3 +12,11 @@ class Auction {
         name: data['name'], category: data['category'], price: data['price']);
   }
 }
+
+TextEditingController nameController = TextEditingController();
+TextEditingController categoryController = TextEditingController();
+TextEditingController priceController = TextEditingController();
+
+String? controllerName;
+String? controllerCategory;
+String? controllerPrice;
