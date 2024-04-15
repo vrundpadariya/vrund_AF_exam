@@ -1,10 +1,19 @@
+import 'package:exam_af/app/views/splash_screen/views/splash_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+import 'app/views/homepage/views/homepage.dart';
 void main(){
-  runApp(MaterialApp(
+  runApp(GetMaterialApp(
     debugShowCheckedModeBanner: false,
-    routes: {
-      '/':(ctx) => Splashscreen();
-    },
+    getPages: [
+      GetPage(
+        name: '/',
+        page: () => SplashScreen(),
+      ),
+      GetPage(name: '/home', page: ()=> homepage(),)
+    ],
+
   ));
 
 }
