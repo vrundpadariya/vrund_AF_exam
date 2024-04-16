@@ -84,23 +84,7 @@ class homepage extends StatelessWidget {
           }),
         ],
       ),
-      // Column(
-      //   children: [
-      //     ListView.builder(itemBuilder: (context, index) {
-      //       var product = DBHelper.fetchQuote();
-      //       return Card(
-      //           child: ListTile(
-      //         leading: IconButton(
-      //             onPressed: () {
-      //               Get.toNamed('/auctions');
-      //             },
-      //             icon: Icon(Icons.arrow_forward_ios_rounded)),
-      //         title: Text(controllerName!),
-      //         subtitle: Text(controllerPrice!),
-      //       ));
-      //     }),
-      //   ],
-      //)
     );
   }
 }
+//dd
