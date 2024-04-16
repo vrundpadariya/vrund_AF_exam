@@ -3,5 +3,5 @@ Introducing Prestige Bids your ultimate destination for exciting auctions right 
 With Prestige Bids, you can browse through a wide range of categories, from rare antiques to cutting-edge technology, and everything in between. Our intuitive interface makes it easy to search for items, view detailed descriptions and images, and track your favorite auctions with just a few taps.
 
 
- there were error that why photo was not uploade
+
  

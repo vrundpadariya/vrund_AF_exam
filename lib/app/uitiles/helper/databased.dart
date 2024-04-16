@@ -33,16 +33,19 @@ class DBHelper {
     );
   }
 
-  static Future<int?> insertProduct({required Auction m_quote}) async {
+  static Future<int?> insertProduct(
+      {required String name,
+      required String category,
+      required String price}) async {
     await initDB();
     String query =
         "INSERT INTO $table_name($name,$category,$price) VALUES(?,?);";
-    List args = [m_quote.name, m_quote.category, m_quote.price];
+    List args = [name, category, price];
     int? res = await database?.rawInsert(query, args);
     return res;
   }
 
-  static  Future<List<Auction>?> fetchQuote() async {
+  static Future<List<Auction>?> fetchQuote() async {
     await initDB();
     String query = "SELECT * FROM $table_name;";
     var list = await database?.rawQuery(query);
@@ -50,7 +53,7 @@ class DBHelper {
     return todo;
   }
 
-  static Future<void> deleteStudentData(int dId) async {
+  static Future<void> deletProductdata(int dId) async {
     database = await initDB();
 
     String sql = 'DELETE FROM Student WHERE $id=?';
